@@ -7,6 +7,7 @@ var state = {
   }
 }
 
+
 function getData(callback){
   $.ajax({
     url: state.currentURL(),
@@ -16,21 +17,19 @@ function getData(callback){
 }
 
 
-
 function addToState(data){
   state.rawData = data.results;
 }
 
+
 function display(state) {
    $('.listOfArticles').empty();
     state.rawData.forEach(function(article) {
-        var list = `<div> ${article.title} ${article.byline}</div>`
+        var list = `<div><b>${article.title}</b><br>${article.byline}<br>${article.published_date}<br>${article.abstract}<br><br><a href="${article.url}">Full Text Article</a></div>`
         $('.listOfArticles').append(list);
+        //We're adding these to a ul, but we aren't adding them as li elements. Should we change that, or even have a ul?
     });
-
 }
-
-
 
 
 function init(data){
@@ -39,34 +38,12 @@ function init(data){
 }
 
 
-
-
-
-
 function eventListener(){
-$('#search').submit(function(e) {
-        e.preventDefault();
-        state.currentSection = $('#selection').val();
-        console.log(state.currentURL());
-        getData(init);
-    });
+  $('#search').submit(function(e) {
+    e.preventDefault();
+    state.currentSection = $('#selection').val();
+    getData(init);
+  });
 }
 
-
-
-
-
 $(eventListener);
-  
-
-
-
-
-
-
-
-
-
-
-
-
