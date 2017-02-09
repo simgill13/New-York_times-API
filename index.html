@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>New York Times Top Stories by Category</title>
-	<link rel="stylesheet" type="text/css" href="main.css">
+    <title>New York Times Top Stories by Category</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
 </head>
+
 <body>
-
-
-
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-	<script type="text/javascript" src="main.js"></script>
+    <form id="search">
+        <select id="selection" name="New York Times Sections">
+            <option value="home">Home</option>
+            <option value="politics">Politics</option>
+            <option value="opinion">Opinion</option>
+            <option value="world">World</option>
+        </select>
+        <button  type="submit"> Search</button>
+    </form>
+    <div class="container">
+        <ul class="listOfArticles">
+        </ul>
+    </div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
 </body>
+
 </html>
+
