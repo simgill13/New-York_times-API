@@ -23,11 +23,10 @@ function addToState(data){
 
 
 function display(state) {
-   $('.listOfArticles').empty();
+   $('.container').empty();
     state.rawData.forEach(function(article) {
-        var list = `<div><b>${article.title}</b><br>${article.byline}<br>${article.published_date}<br>${article.abstract}<br><br><a href="${article.url}">Full Text Article</a></div>`
-        $('.listOfArticles').append(list);
-        //We're adding these to a ul, but we aren't adding them as li elements. Should we change that, or even have a ul?
+        var list = `<div><b>${article.title}</b><br>${article.byline}<br>${article.published_date}<br><br>${article.abstract}<br><br><a href="${article.url}">Full Text Article</a></div>`
+        $('.container').append(list);
     });
 }
 

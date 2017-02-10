@@ -6,7 +6,7 @@ form {
   margin: 40px auto;
 }
 
-ul div {
+.container div {
   padding: 20px;
   border: 1px solid lightgrey;
 }
