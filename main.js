@@ -1,3 +1,5 @@
+//This is the NYT-flex branch
+
 var state = {
   currentSection : "",
   submitted : false,
