@@ -4,20 +4,23 @@
 <head>
     <title>New York Times Top Stories by Category</title>
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="grid.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet">
+
 </head>
 
 <body>
     <form id="search">
-				<label for="New York Times Sections">Choose a New York Times section to view top stories: </label>
-				<select id="selection" name="New York Times Sections">
+        <label id="textTitle" for="New York Times Sections">Choose a New York Times section to view top stories: </label> <br>
+        <select id="selection" name="New York Times Sections">
             <option value="home">Home</option>
             <option value="politics">Politics</option>
             <option value="opinion">Opinion</option>
             <option value="world">World</option>
         </select>
-        <button type="submit"> Search</button>
+        <button id="searchButton" type="submit"> Search</button>
     </form>
-    <div class="container">
+    <div class="container col-12 ">
     </div>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script type="text/javascript" src="main.js"></script>

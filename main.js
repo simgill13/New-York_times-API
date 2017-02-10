@@ -25,9 +25,19 @@ function addToState(data){
 function display(state) {
    $('.container').empty();
     state.rawData.forEach(function(article) {
-        var list = `<div><b>${article.title}</b><br>${article.byline}<br>${article.published_date}<br><br>${article.abstract}<br><br><a href="${article.url}">Full Text Article</a></div>`
+        var list = `<div>
+                        <h2>${article.title}</h2>
+                        <p>${article.byline}<br>${article.published_date}</p>
+                      <br><br>
+                      <div class="inner"
+                        <h5>${article.abstract}</h5>
+                      <br><br>
+                        <a href="${article.url}">Full Text Article</a>
+                        </div>
+                    </div>`
         $('.container').append(list);
     });
+    state.rawData=[];
 }
 
 
