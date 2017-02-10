@@ -1,10 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: #757575;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 body {
-	background-color: #9CB9B6;
-  /*background: url("road-street-blur-blurred.jpg") no-repeat center center fixed; */
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+	background-color: #E0E0E0;
+}
+
+#textTitle {
+  font-family: 'PT Serif', serif;
 }
 
 form {
@@ -14,13 +26,11 @@ form {
 #selection , #searchButton{
 	 background-color: white;
     font-size: 20px;
-
     height: 30px;
     width: 100px;
     margin-top: 20px;
     text-align: center;
     border: 0;
-
     font-family: 'Raleway', sans-serif;
 }
 
@@ -36,27 +46,32 @@ form {
   margin: 40px auto;
 }
 
-
 #textTitle {
 	font-family: 'Raleway', sans-serif;
 	font-size: 40px;
 }
-.container div {
-	width: 32%;
-	height: 40%;
-	float: left;
 
-	padding: 30px;
+.container{
+  display: flex;
+  flex-flow: column wrap;
+}
 
-	margin-bottom: 40px;
-	margin-left: 0.5%;
-	margin-right: 0.5%;
-	vertical-align: top;
-	font-family: 'Sahitya', serif;
- border-radius: 18px;
+.article-div{
+  margin-bottom: 10px;
+  width: 100%;
+  font-family: 'Sahitya', serif;
+  border-radius: 18px;
+  border: 1px solid #A9837E;
+  padding: 20px;
+  background-color: white;
+}
 
-	border: 1px solid #A9837E;
-	background-color: white;
+.container div .inner{
+  border: 1px solid darkgrey;
+  padding: 0px 10px;
+  background-color: #EDEDED;
+  width: 100%;
+  border-radius: 5px;
 }
 
 .logo-img{
@@ -64,29 +79,44 @@ form {
   height: 30px;
 }
 
-/*.container div .inner{
-	background-color: #EDEDED;
-	width: 100%;
+@media screen and (min-width: 683px) {
+  .container{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
 
-	height: 50%;
-	 border-radius: 25px;
-}*/
+  .article-div{
+    margin-bottom: 10px;
+    width: 320px;
+    font-family: 'Sahitya', serif;
+    border-radius: 18px;
+  	border: 1px solid #A9837E;
+    padding: 20px;
+  	background-color: white;
+  }
 
+  .logo-img{
+    width: 30px;
+    height: 30px;
+  }
 
+  .container div .inner{
+    border: 1px solid darkgrey;
+    padding: 0px 10px;
+    background-color: #EDEDED;
+  	width: 100%;
+  	border-radius: 5px;
+  }
 
+  .container p {
+  	font-size: 10px;
+  }
 
-
-
-.container p {
-	font-size: 10px;
-}
-
-
-
-.container div:hover{
-	box-shadow: 6px 5px 10px #CECECE;
-}
-
-ul{
-  padding-left: 0;
+  .article-div:hover{
+    box-shadow: 6px 5px 30px #505050;
+  }
 }

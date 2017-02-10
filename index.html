@@ -2,25 +2,48 @@
 <html>
 
 <head>
-    <title>New York Times Top Stories by Category</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>New York Times Top Stories</title>
     <link rel="stylesheet" type="text/css" href="main.css">
-    <link rel="stylesheet" type="text/css" href="grid.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100|PT+Serif:700" rel="stylesheet">
 
 </head>
 
 <body>
     <form id="search">
-        <label id="textTitle" for="New York Times Sections">Choose a New York Times section to view top stories: </label> <br>
+        <label id="textTitle" for="New York Times Sections"><b>New York Times Top Stories: </b></label> <br>
         <select id="selection" name="New York Times Sections">
-            <option value="home">Home</option>
+						<option value=""></option>
+						<option value="home">Home</option>
             <option value="politics">Politics</option>
             <option value="opinion">Opinion</option>
             <option value="world">World</option>
+						<option value="national">National</option>
+            <option value="upshot">Upshot</option>
+						<option value="nyregion">NY Region</option>
+            <option value="business">Business</option>
+						<option value="technology">Technology</option>
+            <option value="science">Science</option>
+						<option value="health">Health</option>
+						<option value="sports">Sports</option>
+            <option value="arts">Arts</option>
+						<option value="books">Books</option>
+						<option value="movies">Movies</option>
+            <option value="theater">Theater</option>
+						<option value="sundayreview">Sunday Review</option>
+						<option value="fashion">Fashion</option>
+            <option value="tmagazine">T Magazine</option>
+						<option value="food">Food</option>
+						<option value="travel">Travel</option>
+            <option value="magazine">Magazine</option>
+						<option value="realestate">Real Estate</option>
+						<option value="automobiles">Automobiles</option>
+            <option value="obituaries">Obituaries</option>
+						<option value="insider">Insider</option>
         </select>
         <button id="searchButton" type="submit"> Search</button>
     </form>
-    <div class="container col-12">
+    <div class="container">
     </div>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script type="text/javascript" src="main.js"></script>
