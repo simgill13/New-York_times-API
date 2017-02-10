@@ -79,6 +79,8 @@ form {
   height: 30px;
 }
 
+
+/*This styling below applies only to screens with more than 683px:*/
 @media screen and (min-width: 683px) {
   .container{
     margin-left: auto;
@@ -90,26 +92,7 @@ form {
   }
 
   .article-div{
-    margin-bottom: 10px;
     width: 320px;
-    font-family: 'Sahitya', serif;
-    border-radius: 18px;
-  	border: 1px solid #A9837E;
-    padding: 20px;
-  	background-color: white;
-  }
-
-  .logo-img{
-    width: 30px;
-    height: 30px;
-  }
-
-  .container div .inner{
-    border: 1px solid darkgrey;
-    padding: 0px 10px;
-    background-color: #EDEDED;
-  	width: 100%;
-  	border-radius: 5px;
   }
 
   .container p {
