@@ -1,5 +1,5 @@
 var state = {
-  currentSection : "politics",
+  currentSection : "",
   submitted : false,
   rawData: [],
   currentURL: function(){
@@ -24,16 +24,17 @@ function addToState(data){
 
 function display(state) {
    $('.container').empty();
+
     state.rawData.forEach(function(article) {
-        var list = `<div>
-                        <h2>${article.title}</h2>
-                        <p>${article.byline}<br>${article.published_date}</p>
-                      <br><br>
-                      <div class="inner"
+        var list = `<div class="article-div">
+                      <img src="NYTlogo.png" alt="NYT Logo" class="logo-img">
+                      <h2>${article.title}</h2>
+                      <p>${article.byline}<br>${article.published_date}</p>
+                      <ul>
                         <h5>${article.abstract}</h5>
-                      <br><br>
+                        <br>
                         <a href="${article.url}">Full Text Article</a>
-                        </div>
+                      </ul>
                     </div>`
         $('.container').append(list);
     });
